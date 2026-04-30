@@ -28,7 +28,7 @@ export default function Navbar() {
           <a href="tel:7788824554" className="phone-link">778-882-4554</a>
           <a href="tel:6047294240" className="phone-link">604-729-4240</a>
         </div>
-        <Link href="#contact" className="btn-primary nav-cta">Get Started</Link>
+        <Link href="#contact" className="btn-primary nav-cta">Contact Us</Link>
       </div>
 
       <style jsx>{`
