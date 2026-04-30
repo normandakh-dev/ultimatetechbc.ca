@@ -125,7 +125,7 @@ export default function Hero() {
         .hero-container {
           position: relative;
           z-index: 1;
-          height: 500px;
+          height: 400px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -135,7 +135,7 @@ export default function Hero() {
         .hero-slide {
           position: absolute;
           width: 100%;
-          max-width: 900px;
+          max-width: 1100px;
           opacity: 0;
           transform: translateY(30px);
           transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -158,24 +158,24 @@ export default function Hero() {
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 1px;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.2rem;
           color: white;
         }
 
         .hero-title {
-          font-size: clamp(2.5rem, 7vw, 4rem);
-          margin-bottom: 1.5rem;
+          font-size: clamp(2.5rem, 6vw, 3.8rem);
+          margin-bottom: 1.2rem;
           font-weight: 800;
           letter-spacing: -2px;
           line-height: 1.1;
         }
 
         .hero-subtitle {
-          font-size: 1.25rem;
+          font-size: 1.2rem;
           color: var(--text-muted);
-          margin-bottom: 2.5rem;
+          margin-bottom: 2.2rem;
           line-height: 1.6;
-          max-width: 700px;
+          max-width: 850px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -188,7 +188,7 @@ export default function Hero() {
 
         .slider-controls {
           position: absolute;
-          bottom: -40px;
+          bottom: -20px;
           left: 50%;
           transform: translateX(-50%);
           display: flex;
