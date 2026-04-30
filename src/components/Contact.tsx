@@ -44,7 +44,7 @@ export default function Contact() {
               <span className="icon">📍</span>
               <div>
                 <h4>Office</h4>
-                <p>123 Tech Avenue, Silicon Valley, CA</p>
+                <p>5676 Smith Avenue, Unit 106, Burnaby BC V5H 2K9</p>
               </div>
             </div>
             <div className="contact-item">
@@ -58,7 +58,7 @@ export default function Contact() {
               <span className="icon">📧</span>
               <div>
                 <h4>Email</h4>
-                <p>hello@ultimatetechbc.ca</p>
+                <p>service@ultimatetechbbc.ca</p>
               </div>
             </div>
           </div>

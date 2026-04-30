@@ -30,7 +30,8 @@ export default function Footer() {
             <h4>Contact Us</h4>
             <p>778-882-4554</p>
             <p>604-729-4240</p>
-            <p>hello@ultimatetechbc.ca</p>
+            <p>service@ultimatetechbbc.ca</p>
+            <p className="footer-address">5676 Smith Avenue, Unit 106, Burnaby BC V5H 2K9</p>
           </div>
         </div>
         
@@ -93,6 +94,12 @@ export default function Footer() {
           color: var(--text-muted);
           margin-bottom: 0.5rem;
           font-size: 0.95rem;
+          line-height: 1.4;
+        }
+
+        .footer-address {
+          max-width: 250px;
+          margin-top: 0.5rem;
         }
 
         .social-icons {
