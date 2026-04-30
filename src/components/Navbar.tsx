@@ -21,9 +21,8 @@ export default function Navbar() {
           <span className="gradient-text">ULTIMATE</span> TECH
         </Link>
         <ul className="nav-links">
-          <li><Link href="#about">About</Link></li>
-          <li><Link href="#services">Services</Link></li>
-          <li><Link href="#contact">Contact</Link></li>
+          <li><Link href="#services">SERVICES</Link></li>
+          <li><Link href="#contact">CONTACT</Link></li>
         </ul>
         <div className="nav-contact">
           <a href="tel:7788824554" className="phone-link">778-882-4554</a>
