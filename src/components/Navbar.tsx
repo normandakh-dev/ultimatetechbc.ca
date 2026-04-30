@@ -25,6 +25,10 @@ export default function Navbar() {
           <li><Link href="#services">Services</Link></li>
           <li><Link href="#contact">Contact</Link></li>
         </ul>
+        <div className="nav-contact">
+          <a href="tel:7788824554" className="phone-link">778-882-4554</a>
+          <a href="tel:6047294240" className="phone-link">604-729-4240</a>
+        </div>
         <Link href="#contact" className="btn-primary nav-cta">Get Started</Link>
       </div>
 
@@ -74,9 +78,37 @@ export default function Navbar() {
           color: white;
         }
 
+        .nav-contact {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 0.2rem;
+          margin-left: auto;
+          margin-right: 2rem;
+        }
+
+        .phone-link {
+          font-size: 0.85rem;
+          font-weight: 600;
+          color: var(--primary);
+        }
+
+        .phone-link:hover {
+          color: white;
+        }
+
         .nav-cta {
           padding: 0.6rem 1.5rem;
           font-size: 0.9rem;
+        }
+
+        @media (max-width: 1024px) {
+          .nav-links {
+            gap: 1.5rem;
+          }
+          .nav-contact {
+            display: none;
+          }
         }
 
         @media (max-width: 768px) {

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ULTIMATE TECH | Future-Ready Business Solutions",
-  description: "We combine cutting-edge technology with strategic innovation to help your company thrive in the digital era.",
+  title: "ULTIMATE TECH | Network Cabling, Security Systems & Digital Solutions",
+  description: "Expert Cat6 cable installation, structured cabling, security camera systems, and custom web/app development. Serving your business with future-ready technology.",
 };
 
 export default function RootLayout({

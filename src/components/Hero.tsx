@@ -10,16 +10,17 @@ export default function Hero() {
       
       <div className="container hero-content fade-in">
         <h1 className="hero-title">
-          Elevate Your Business with <br />
-          <span className="gradient-text">Future-Ready</span> Solutions
+          Premium <span className="gradient-text">Network Cabling</span> <br />
+          & Infrastructure Solutions
         </h1>
         <p className="hero-subtitle">
-          We combine cutting-edge technology with strategic innovation to help your company 
-          thrive in the digital era. Experience excellence like never before.
+          Expert Cat6 installation, structured cabling, and security systems. 
+          From small cable drops to complete system installs, we provide the 
+          backbone for your business technology.
         </p>
         <div className="hero-btns">
-          <a href="#contact" className="btn-primary">Get Started Now</a>
-          <a href="#services" className="btn-outline">Our Services</a>
+          <a href="#contact" className="btn-primary">Get a Free Quote</a>
+          <a href="#services" className="btn-outline">View Our Services</a>
         </div>
       </div>
 

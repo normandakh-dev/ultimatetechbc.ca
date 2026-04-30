@@ -12,27 +12,25 @@ export default function Footer() {
               <span className="gradient-text">ULTIMATE</span> TECH
             </Link>
             <p className="footer-desc">
-              Pioneering the future of technology solutions. Building a smarter, 
-              more connected world through innovation.
+              Your trusted partner for Network Cabling, Security Systems, and Digital Solutions. 
+              Providing professional Cat6 installation and surveillance systems across BC.
             </p>
           </div>
           
           <div className="footer-links">
-            <h4>Quick Links</h4>
+            <h4>Our Services</h4>
             <ul>
-              <li><Link href="#about">About Us</Link></li>
-              <li><Link href="#services">Our Services</Link></li>
-              <li><Link href="#contact">Contact</Link></li>
+              <li>Network Cabling</li>
+              <li>Security Systems</li>
+              <li>Digital Solutions</li>
             </ul>
           </div>
           
-          <div className="footer-social">
-            <h4>Follow Us</h4>
-            <div className="social-icons">
-              <Link href="#" className="social-icon">Li</Link>
-              <Link href="#" className="social-icon">Tw</Link>
-              <Link href="#" className="social-icon">Ig</Link>
-            </div>
+          <div className="footer-contact">
+            <h4>Contact Us</h4>
+            <p>778-882-4554</p>
+            <p>604-729-4240</p>
+            <p>hello@ultimatetechbc.ca</p>
           </div>
         </div>
         
@@ -84,6 +82,17 @@ export default function Footer() {
 
         .footer ul li a:hover {
           color: white;
+        }
+
+        .footer-social, .footer-contact {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .footer-contact p {
+          color: var(--text-muted);
+          margin-bottom: 0.5rem;
+          font-size: 0.95rem;
         }
 
         .social-icons {

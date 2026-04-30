@@ -2,34 +2,19 @@
 
 const services = [
   {
-    title: "Web Development",
-    desc: "Custom high-performance web applications built with the latest frameworks like Next.js and React.",
-    icon: "🌐"
+    title: "Network Cabling & Infrastructure",
+    desc: "The backbone of your business. We specialize in Cat6 cable installation, structured cabling, and professional rack organization. Small cable drop jobs are always welcome.",
+    icon: "🔌"
   },
   {
-    title: "Cloud Solutions",
-    desc: "Scalable cloud infrastructure and serverless architecture to keep your business running smoothly.",
-    icon: "☁️"
+    title: "Security & Surveillance",
+    desc: "Complete security system and camera installation. We provide high-definition surveillance solutions and integrated security systems to protect your assets 24/7.",
+    icon: "🛡️"
   },
   {
-    title: "AI Integration",
-    desc: "Implementing intelligent automation and machine learning to optimize your company workflows.",
-    icon: "🤖"
-  },
-  {
-    title: "Cyber Security",
-    desc: "Robust security protocols to protect your data and give your clients peace of mind.",
-    icon: "🔒"
-  },
-  {
-    title: "UI/UX Design",
-    desc: "User-centric designs that focus on providing a seamless and engaging experience for your customers.",
-    icon: "🎨"
-  },
-  {
-    title: "Mobile Apps",
-    desc: "Cross-platform mobile solutions that bring your business directly to your users' pockets.",
-    icon: "📱"
+    title: "Digital Solutions & Tech Support",
+    desc: "Custom website development, mobile app building, and professional computer repair. We provide end-to-end technical support for all your digital needs.",
+    icon: "💻"
   }
 ];
 
@@ -38,9 +23,9 @@ export default function Services() {
     <section id="services" className="section-padding">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title text-center">Our Services</h2>
+          <h2 className="section-title text-center">3 Main <span className="gradient-text">Categories</span></h2>
           <p className="section-subtitle text-center">
-            Comprehensive solutions tailored to your unique business needs.
+            Comprehensive technology and infrastructure solutions for your business.
           </p>
         </div>
 
@@ -49,6 +34,29 @@ export default function Services() {
             <div key={index} className="service-card glass fade-in">
               <div className="service-icon">{service.icon}</div>
               <h3 className="service-title">{service.title}</h3>
+              <ul className="service-list">
+                {service.title === "Network Cabling & Infrastructure" && (
+                  <>
+                    <li>Cat6 Cable Installation</li>
+                    <li>Structured Cabling</li>
+                    <li>Small Cable Drops</li>
+                  </>
+                )}
+                {service.title === "Security & Surveillance" && (
+                  <>
+                    <li>Security Camera Install</li>
+                    <li>Complete System Setup</li>
+                    <li>HD Monitoring</li>
+                  </>
+                )}
+                {service.title === "Digital Solutions & Tech Support" && (
+                  <>
+                    <li>Website & Phone App Build</li>
+                    <li>Computer Repair</li>
+                    <li>Software Support</li>
+                  </>
+                )}
+              </ul>
               <p className="service-desc">{service.desc}</p>
             </div>
           ))}
@@ -75,7 +83,7 @@ export default function Services() {
 
         .services-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
           gap: 2rem;
         }
 
@@ -83,6 +91,8 @@ export default function Services() {
           padding: 3rem 2rem;
           border-radius: 24px;
           transition: var(--transition);
+          display: flex;
+          flex-direction: column;
         }
 
         .service-card:hover {
@@ -92,19 +102,34 @@ export default function Services() {
         }
 
         .service-icon {
-          font-size: 2.5rem;
+          font-size: 3rem;
           margin-bottom: 1.5rem;
         }
 
         .service-title {
-          font-size: 1.5rem;
-          margin-bottom: 1rem;
+          font-size: 1.6rem;
+          margin-bottom: 1.5rem;
           color: white;
+          font-family: 'Outfit', sans-serif;
+        }
+
+        .service-list {
+          margin-bottom: 1.5rem;
+          padding-left: 1.2rem;
+        }
+
+        .service-list li {
+          color: var(--primary);
+          font-weight: 600;
+          font-size: 0.95rem;
+          margin-bottom: 0.5rem;
+          list-style-type: disc;
         }
 
         .service-desc {
           color: var(--text-muted);
           line-height: 1.6;
+          font-size: 0.95rem;
         }
       `}</style>
     </section>

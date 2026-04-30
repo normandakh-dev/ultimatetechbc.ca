@@ -48,10 +48,17 @@ export default function Contact() {
               </div>
             </div>
             <div className="contact-item">
+              <span className="icon">📞</span>
+              <div>
+                <h4>Phone</h4>
+                <p>778-882-4554 / 604-729-4240</p>
+              </div>
+            </div>
+            <div className="contact-item">
               <span className="icon">📧</span>
               <div>
                 <h4>Email</h4>
-                <p>hello@ultimatetech.com</p>
+                <p>hello@ultimatetechbc.ca</p>
               </div>
             </div>
           </div>
