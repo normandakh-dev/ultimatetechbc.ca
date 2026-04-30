@@ -23,7 +23,7 @@ export default function Services() {
     <section id="services" className="section-padding">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title text-center">3 Main <span className="gradient-text">Categories</span></h2>
+          <h2 className="section-title text-center">Our <span className="gradient-text">Services</span></h2>
           <p className="section-subtitle text-center">
             Comprehensive technology and infrastructure solutions for your business.
           </p>
