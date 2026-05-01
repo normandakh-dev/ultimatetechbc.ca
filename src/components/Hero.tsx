@@ -18,7 +18,9 @@ export default function Hero() {
               <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="1" className="pulse-ring" />
             </svg>
           </div>
-          <span className="hero-tag">Expert Infrastructure Solutions</span>
+          <span className="hero-tag">
+            <span className="underline-text">ULTIMATETECH</span> GREAT RESULTS
+          </span>
           <h1 className="hero-title">
             Premium <span className="gradient-text">Network Cabling</span> <br />
             & Security Systems
@@ -97,12 +99,26 @@ export default function Hero() {
           border-radius: 50px;
           background: var(--glass-bg);
           border: 1px solid var(--glass-border);
-          font-size: 0.9rem;
-          font-weight: 600;
-          color: var(--primary);
+          font-size: 0.95rem;
+          font-weight: 700;
+          color: white;
           margin-bottom: 2rem;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
+        }
+
+        .underline-text {
+          position: relative;
+          display: inline-block;
+          padding-bottom: 4px;
+          border-bottom: 11px solid var(--primary);
+          animation: borderColorCycle 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes borderColorCycle {
+          0% { border-color: var(--primary); }
+          50% { border-color: var(--secondary); }
+          100% { border-color: var(--accent); }
         }
 
         /* Gadget Styles */
