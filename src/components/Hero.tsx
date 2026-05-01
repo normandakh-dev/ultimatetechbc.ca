@@ -22,8 +22,8 @@ export default function Hero() {
             <span className="underline-text">ULTIMATE TECH</span> GREAT RESULTS
           </span>
           <h1 className="hero-title">
-            Premium <span className="gradient-text">Network Cabling</span> <br />
-            & Security Systems
+            <span className="gradient-text">LOW VOLTAGE CABLING</span> <br />
+            & Security System Installs
           </h1>
           <p className="hero-subtitle">
             Specializing in Cat6 installation, structured cabling, and complete security systems. 
