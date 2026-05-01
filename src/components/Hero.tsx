@@ -26,9 +26,8 @@ export default function Hero() {
             <span className="side-word">Security System Installs</span>
           </h1>
           <p className="hero-subtitle">
-            Specializing in Cat6 installation, structured cabling, and complete security systems. 
-            From small cable drops to large infrastructure projects, we provide reliable 
-            technical solutions across BC.
+            Since 2015, we serve domestic and commercial customers with structured cabling, and complete security system installs. <br /><br />
+            We provide free quotes for small cable drops to large infrastructure projects.
           </p>
           <div className="hero-btns">
             <a href="#contact" className="btn-primary">Get a Free Quote</a>
