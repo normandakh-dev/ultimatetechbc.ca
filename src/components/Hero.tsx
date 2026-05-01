@@ -210,7 +210,7 @@ export default function Hero() {
           }
 
           .hero-title {
-            font-size: calc(2.2rem - 9px);
+            font-size: 3.2rem;
             margin-bottom: 1rem;
           }
 
