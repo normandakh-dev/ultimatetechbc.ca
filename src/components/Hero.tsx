@@ -22,7 +22,7 @@ export default function Hero() {
             <span className="underline-text">ULTIMATE TECH</span> GREAT RESULTS
           </span>
           <h1 className="hero-title">
-            <span className="side-word">LOW</span> <span className="gradient-text">VOLTAGE</span> <span className="side-word">CABLING</span> <br />
+            <span className="side-word gradient-text">LOW</span> <span className="gradient-text">VOLTAGE</span> <span className="side-word gradient-text">CABLING</span> <br />
             <span className="side-word">Security System Installs</span>
           </h1>
           <p className="hero-subtitle">
