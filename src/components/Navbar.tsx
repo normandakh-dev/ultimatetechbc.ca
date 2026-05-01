@@ -20,9 +20,7 @@ export default function Navbar() {
         <Link href="/" className="logo">
           <span className="gradient-text">ULTIMATE</span> TECH SERVICES
         </Link>
-        <ul className="nav-links">
-          <li><Link href="#contact">CONTACT</Link></li>
-        </ul>
+        {/* Links removed as requested */}
         <div className="nav-contact">
           <a href="tel:7788824554" className="phone-link">778-882-4554</a>
           <a href="tel:6047294240" className="phone-link">604-729-4240</a>
