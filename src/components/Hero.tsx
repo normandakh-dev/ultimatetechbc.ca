@@ -23,7 +23,7 @@ export default function Hero() {
           </span>
           <h1 className="hero-title">
             <span className="side-word">LOW</span> <span className="gradient-text">VOLTAGE</span> <span className="side-word">CABLING</span> <br />
-            & Security System Installs
+            <span className="side-word">& Security System Installs</span>
           </h1>
           <p className="hero-subtitle">
             Specializing in Cat6 installation, structured cabling, and complete security systems. 
@@ -173,6 +173,7 @@ export default function Hero() {
         }
 
         .side-word {
+          font-size: calc(100% - 13px);
           color: white;
           font-weight: 700;
         }
