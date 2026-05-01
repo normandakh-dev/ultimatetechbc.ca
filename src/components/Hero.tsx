@@ -174,7 +174,6 @@ export default function Hero() {
 
         .side-word {
           font-size: calc(100% - 13px);
-          color: white;
           font-weight: 700;
         }
 
