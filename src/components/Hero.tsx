@@ -108,17 +108,16 @@ export default function Hero() {
         }
 
         .underline-text {
-          position: relative;
-          display: inline-block;
-          padding-bottom: 4px;
-          border-bottom: 11px solid var(--primary);
-          animation: borderColorCycle 3s infinite alternate ease-in-out;
+          text-decoration: underline wavy var(--primary);
+          text-decoration-thickness: 4px;
+          text-underline-offset: 8px;
+          animation: textDecorationColorCycle 3s infinite alternate ease-in-out;
         }
 
-        @keyframes borderColorCycle {
-          0% { border-color: var(--primary); }
-          50% { border-color: var(--secondary); }
-          100% { border-color: var(--accent); }
+        @keyframes textDecorationColorCycle {
+          0% { text-decoration-color: var(--primary); }
+          50% { text-decoration-color: var(--secondary); }
+          100% { text-decoration-color: var(--accent); }
         }
 
         /* Gadget Styles */
