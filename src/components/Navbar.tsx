@@ -21,7 +21,6 @@ export default function Navbar() {
           <span className="gradient-text">ULTIMATE</span> TECH SERVICES
         </Link>
         <ul className="nav-links">
-          <li><Link href="#services">SERVICES</Link></li>
           <li><Link href="#contact">CONTACT</Link></li>
         </ul>
         <div className="nav-contact">
