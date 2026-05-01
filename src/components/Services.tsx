@@ -1,20 +1,43 @@
 "use client";
 
+const EthernetIcon = () => (
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="glowing-icon">
+    <rect x="6" y="2" width="12" height="10" rx="2" />
+    <path d="M10 12v10" />
+    <path d="M14 12v10" />
+    <path d="M6 22h12" />
+    <path d="M9 2v3M12 2v3M15 2v3" />
+  </svg>
+);
+
+const ShieldIcon = () => (
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+  </svg>
+);
+
+const LaptopIcon = () => (
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+    <line x1="2" y1="20" x2="22" y2="20" />
+  </svg>
+);
+
 const services = [
   {
     title: "Network Cabling & Infrastructure",
     desc: "The backbone of your business. We specialize in Cat6 cable installation, structured cabling, and professional rack organization. Small cable drop jobs are always welcome.",
-    icon: "🔌"
+    icon: <EthernetIcon />
   },
   {
     title: "Security & Surveillance",
     desc: "Complete security system and camera installation. We provide high-definition surveillance solutions and integrated security systems to protect your assets 24/7.",
-    icon: "🛡️"
+    icon: <ShieldIcon />
   },
   {
     title: "Digital Solutions & Tech Support",
     desc: "Custom website development, mobile app building, and professional computer repair. We provide end-to-end technical support for all your digital needs.",
-    icon: "💻"
+    icon: <LaptopIcon />
   }
 ];
 
@@ -104,6 +127,17 @@ export default function Services() {
         .service-icon {
           font-size: 3rem;
           margin-bottom: 1.5rem;
+          color: var(--primary);
+        }
+
+        .glowing-icon {
+          filter: drop-shadow(0 0 5px var(--primary));
+          animation: iconGlow 2s infinite alternate ease-in-out;
+        }
+
+        @keyframes iconGlow {
+          0% { filter: drop-shadow(0 0 2px var(--primary)); opacity: 0.8; }
+          100% { filter: drop-shadow(0 0 15px var(--accent)); opacity: 1; }
         }
 
         .service-title {
