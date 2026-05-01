@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <Link href="/" className="logo">
-          <span className="gradient-text">ULTIMATE</span> TECH
+          <span className="gradient-text">ULTIMATE</span> TECH SERVICES
         </Link>
         <ul className="nav-links">
           <li><Link href="#services">SERVICES</Link></li>
