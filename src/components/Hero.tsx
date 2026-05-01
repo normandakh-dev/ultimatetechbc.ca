@@ -19,7 +19,7 @@ export default function Hero() {
             </svg>
           </div>
           <span className="hero-tag">
-            <span className="underline-text">ULTIMATETECH</span> GREAT RESULTS
+            <span className="underline-text">ULTIMATE TECH</span> GREAT RESULTS
           </span>
           <h1 className="hero-title">
             Premium <span className="gradient-text">Network Cabling</span> <br />
@@ -108,16 +108,32 @@ export default function Hero() {
         }
 
         .underline-text {
-          text-decoration: underline wavy var(--primary);
-          text-decoration-thickness: 4px;
-          text-underline-offset: 8px;
+          position: relative;
+          display: inline-block;
+          padding-bottom: 2px;
+        }
+
+        .underline-text::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 100%;
+          height: 12px;
+          background: var(--primary);
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 10 Q 25 0, 50 10 T 100 10' fill='none' stroke='black' stroke-width='8'/%3E%3C/svg%3E");
+          -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 10 Q 25 0, 50 10 T 100 10' fill='none' stroke='black' stroke-width='8'/%3E%3C/svg%3E");
+          mask-size: 50% 100%;
+          -webkit-mask-size: 50% 100%;
+          mask-repeat: repeat-x;
+          -webkit-mask-repeat: repeat-x;
           animation: textDecorationColorCycle 3s infinite alternate ease-in-out;
         }
 
         @keyframes textDecorationColorCycle {
-          0% { text-decoration-color: var(--primary); }
-          50% { text-decoration-color: var(--secondary); }
-          100% { text-decoration-color: var(--accent); }
+          0% { background-color: var(--primary); }
+          50% { background-color: var(--secondary); }
+          100% { background-color: var(--accent); }
         }
 
         /* Gadget Styles */
