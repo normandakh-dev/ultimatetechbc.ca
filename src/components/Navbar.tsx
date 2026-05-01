@@ -60,6 +60,7 @@ export default function Navbar() {
           font-size: 1.5rem;
           font-weight: 800;
           letter-spacing: -1px;
+          margin-left: -40px;
         }
 
         .nav-links {
