@@ -10,6 +10,14 @@ export default function Hero() {
       
       <div className="container hero-container fade-in">
         <div className="hero-content">
+          <div className="gadget-wrapper">
+            <svg className="gadget" width="113" height="113" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="2" strokeDasharray="5 5" className="outer-ring" />
+              <path d="M50 20V30M50 70V80M20 50H30M70 50H80M28.8 28.8L35.9 35.9M64.1 64.1L71.2 71.2M28.8 71.2L35.9 64.1M64.1 35.9L71.2 28.8" stroke="currentColor" strokeWidth="4" strokeLinecap="round" className="inner-gear" />
+              <circle cx="50" cy="50" r="10" fill="currentColor" className="core" />
+              <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="1" className="pulse-ring" />
+            </svg>
+          </div>
           <span className="hero-tag">Expert Infrastructure Solutions</span>
           <h1 className="hero-title">
             Premium <span className="gradient-text">Network Cabling</span> <br />
@@ -95,6 +103,53 @@ export default function Hero() {
           margin-bottom: 2rem;
           text-transform: uppercase;
           letter-spacing: 1px;
+        }
+
+        /* Gadget Styles */
+        .gadget-wrapper {
+          margin-bottom: 1rem;
+          display: flex;
+          justify-content: center;
+        }
+
+        .gadget {
+          animation: colorCycle 3s infinite alternate ease-in-out;
+        }
+
+        .outer-ring {
+          animation: rotate 10s infinite linear;
+          transform-origin: center;
+        }
+
+        .inner-gear {
+          animation: rotateRev 5s infinite linear;
+          transform-origin: center;
+        }
+
+        .pulse-ring {
+          animation: pulse 2s infinite ease-out;
+          transform-origin: center;
+        }
+
+        @keyframes colorCycle {
+          0% { color: var(--primary); }
+          50% { color: var(--secondary); }
+          100% { color: var(--accent); }
+        }
+
+        @keyframes rotate {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotateRev {
+          from { transform: rotate(360deg); }
+          to { transform: rotate(0deg); }
+        }
+
+        @keyframes pulse {
+          0% { transform: scale(1); opacity: 0.5; }
+          100% { transform: scale(1.5); opacity: 0; }
         }
 
         .hero-title {
