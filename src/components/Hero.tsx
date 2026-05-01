@@ -22,8 +22,8 @@ export default function Hero() {
             <span className="underline-text">ULTIMATE TECH</span> GREAT RESULTS
           </span>
           <h1 className="hero-title">
-            <span className="baby-blue-text">
-              <span className="side-word">LOW</span> VOLTAGE <span className="side-word">CABLING</span>
+            <span className="baby-blue-text side-word">
+              LOW VOLTAGE CABLING
             </span> <br />
             <span className="side-word">Security System Installs</span>
           </h1>
