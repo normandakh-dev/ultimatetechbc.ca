@@ -22,7 +22,9 @@ export default function Hero() {
             <span className="underline-text">ULTIMATE TECH</span> GREAT RESULTS
           </span>
           <h1 className="hero-title">
-            <span className="side-word gradient-text">LOW</span> <span className="gradient-text">VOLTAGE</span> <span className="side-word gradient-text">CABLING</span> <br />
+            <span className="baby-blue-text">
+              <span className="side-word">LOW</span> VOLTAGE <span className="side-word">CABLING</span>
+            </span> <br />
             <span className="side-word">Security System Installs</span>
           </h1>
           <p className="hero-subtitle">
@@ -164,11 +166,15 @@ export default function Hero() {
         }
 
         .hero-title {
-          font-size: clamp(2.8rem, 8vw, 4.5rem);
+          font-size: clamp(2.4rem, 7.5vw, 4.1rem);
           margin-bottom: 1.5rem;
           font-weight: 800;
           letter-spacing: -2px;
           line-height: 1.1;
+        }
+
+        .baby-blue-text {
+          color: #89CFF0;
         }
 
         .side-word {
