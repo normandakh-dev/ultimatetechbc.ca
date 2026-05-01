@@ -199,6 +199,22 @@ export default function Hero() {
             min-height: 70vh;
             padding-top: 120px;
           }
+          
+          .hero-tag {
+            font-size: calc(0.95rem - 7px);
+            padding: 0.4rem 1.2rem;
+          }
+
+          .hero-title {
+            font-size: calc(2.2rem - 9px);
+            margin-bottom: 1rem;
+          }
+
+          .hero-subtitle {
+            font-size: calc(1.1rem - 9px);
+            margin-bottom: 2rem;
+          }
+
           .hero-btns {
             flex-direction: column;
             align-items: stretch;
