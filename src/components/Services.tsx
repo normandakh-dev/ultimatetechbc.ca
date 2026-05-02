@@ -33,7 +33,8 @@ const services = [
     items: [
       { name: "Network Cable Pulling & Termination", detail: "Running cables through walls/ceilings, terminating into jacks, patch panels, or racks." },
       { name: "Fiber Optic Installation", detail: "Single-mode and multi-mode fiber, splicing, testing." },
-      { name: "Cable Management", detail: "Tray systems, conduits, labeling, and organization for clean infrastructure." }
+      { name: "Cable Management", detail: "Tray systems, conduits, labeling, and organization for clean infrastructure." },
+      { name: "Industry Compliance", detail: "Compliance with standards like TIA/EIA and BICSI." }
     ]
   },
   {
@@ -53,7 +54,9 @@ const services = [
     icon: <WifiIcon />,
     items: [
       { name: "Wi-Fi Systems", detail: "Wi-Fi access point installation and upgrades." },
-      { name: "VoIP Telephony", detail: "VoIP phone system cabling and setup." }
+      { name: "VoIP Telephony", detail: "VoIP phone system cabling and setup." },
+      { name: "Office Phone Systems", detail: "Low cost office phone systems." },
+      { name: "Industry Compliance", detail: "Compliance with standards like TIA/EIA and BICSI." }
     ]
   }
 ];
@@ -65,7 +68,7 @@ export default function Services() {
         <div className="section-header">
           <h2 className="section-title text-center">Our <span className="gradient-text">Services</span></h2>
           <p className="section-subtitle text-center">
-            Comprehensive technology and infrastructure solutions for your business.
+            Insured work with full satisfaction guarantee for complete low-voltage solutions including structured cabling, fiber optic installation, network infrastructure setup, Wi-Fi deployment, security system wiring, and ongoing maintenance for residential and commercial environments.
           </p>
         </div>
 
@@ -171,10 +174,10 @@ export default function Services() {
         }
 
         .service-list li::before {
-          content: '→';
+          content: '✓';
           position: absolute;
           left: 0;
-          color: var(--primary);
+          color: #006400;
           font-weight: bold;
         }
 
