@@ -16,28 +16,45 @@ const ShieldIcon = () => (
   </svg>
 );
 
-const LaptopIcon = () => (
+const WifiIcon = () => (
   <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-    <line x1="2" y1="20" x2="22" y2="20" />
+    <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+    <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+    <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+    <line x1="12" y1="20" x2="12.01" y2="20" />
   </svg>
 );
 
 const services = [
   {
-    title: "Network Cabling & Infrastructure",
-    desc: "The backbone of your business. We specialize in Cat6 cable installation, structured cabling, and professional rack organization. Small cable drop jobs are always welcome.",
-    icon: <EthernetIcon />
+    title: "Structured Cabling Installation",
+    desc: "Design and install Cat5e, Cat6, Cat6A, Cat7, and fiber optic systems.",
+    icon: <EthernetIcon />,
+    items: [
+      { name: "Network Cable Pulling & Termination", detail: "Running cables through walls/ceilings, terminating into jacks, patch panels, or racks." },
+      { name: "Fiber Optic Installation", detail: "Single-mode and multi-mode fiber, splicing, testing." },
+      { name: "Cable Management", detail: "Tray systems, conduits, labeling, and organization for clean infrastructure." }
+    ]
   },
   {
     title: "Security & Surveillance",
-    desc: "Complete security system and camera installation. We provide high-definition surveillance solutions and integrated security systems to protect your assets 24/7.",
-    icon: <ShieldIcon />
+    desc: "Comprehensive low-voltage wiring and security system implementations.",
+    icon: <ShieldIcon />,
+    items: [
+      { name: "CCTV & NVR/DVR", detail: "IP camera (CCTV) cabling and installation, NVR/DVR setup." },
+      { name: "Access & Intercom", detail: "Access control systems (card readers, door strikes) and Intercom systems." },
+      { name: "A/V & Automation", detail: "Audio/visual wiring (conference rooms, displays) and Building automation (HVAC)." },
+      { name: "Industry Compliance", detail: "Compliance with standards like TIA/EIA and BICSI." }
+    ]
   },
   {
-    title: "Digital Solutions & Tech Support",
-    desc: "Custom website development, mobile app building, and professional computer repair. We provide end-to-end technical support for all your digital needs.",
-    icon: <LaptopIcon />
+    title: "Wireless & Communication",
+    desc: "Reliable wireless networks and unified communication setups.",
+    icon: <WifiIcon />,
+    items: [
+      { name: "Wi-Fi Systems", detail: "Wi-Fi access point installation and upgrades." },
+      { name: "VoIP Telephony", detail: "VoIP phone system cabling and setup." }
+    ]
   }
 ];
 
@@ -57,30 +74,15 @@ export default function Services() {
             <div key={index} className="service-card glass fade-in">
               <div className="service-icon">{service.icon}</div>
               <h3 className="service-title">{service.title}</h3>
+              <p className="service-desc-top">{service.desc}</p>
               <ul className="service-list">
-                {service.title === "Network Cabling & Infrastructure" && (
-                  <>
-                    <li>Cat6 Cable Installation</li>
-                    <li>Structured Cabling</li>
-                    <li>Small Cable Drops</li>
-                  </>
-                )}
-                {service.title === "Security & Surveillance" && (
-                  <>
-                    <li>Security Camera Install</li>
-                    <li>Complete System Setup</li>
-                    <li>HD Monitoring</li>
-                  </>
-                )}
-                {service.title === "Digital Solutions & Tech Support" && (
-                  <>
-                    <li>Website & Phone App Build</li>
-                    <li>Computer Repair</li>
-                    <li>Software Support</li>
-                  </>
-                )}
+                {service.items.map((item, idx) => (
+                  <li key={idx}>
+                    <span className="item-name">{item.name}</span>
+                    <span className="item-detail">{item.detail}</span>
+                  </li>
+                ))}
               </ul>
-              <p className="service-desc">{service.desc}</p>
             </div>
           ))}
         </div>
@@ -142,28 +144,53 @@ export default function Services() {
 
         .service-title {
           font-size: 1.6rem;
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.8rem;
           color: white;
           font-family: 'Outfit', sans-serif;
+        }
+        
+        .service-desc-top {
+          color: var(--text-muted);
+          line-height: 1.6;
+          font-size: 0.95rem;
+          margin-bottom: 1.5rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          padding-bottom: 1.5rem;
         }
 
         .service-list {
           margin-bottom: 1.5rem;
-          padding-left: 1.2rem;
+          padding-left: 0;
         }
 
         .service-list li {
-          color: var(--primary);
-          font-weight: 600;
-          font-size: 0.95rem;
-          margin-bottom: 0.5rem;
-          list-style-type: disc;
+          margin-bottom: 1rem;
+          list-style-type: none;
+          position: relative;
+          padding-left: 1.5rem;
         }
 
-        .service-desc {
-          color: var(--text-muted);
-          line-height: 1.6;
+        .service-list li::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: var(--primary);
+          font-weight: bold;
+        }
+
+        .item-name {
+          color: white;
+          font-weight: 600;
+          display: block;
           font-size: 0.95rem;
+          margin-bottom: 0.2rem;
+        }
+
+        .item-detail {
+          color: var(--text-muted);
+          font-size: 0.85rem;
+          line-height: 1.4;
+          display: block;
         }
       `}</style>
     </section>
